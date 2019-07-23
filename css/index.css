@@ -145,3 +145,61 @@ footer {
     font-size: 1.15em;
     text-decoration: none;
 }
+
+/********
+* State *
+********/
+
+@media screen and (max-width: 800px) {
+    .primary-nav {
+        justify-content: space-between;
+        padding-left: 2.8%;
+        padding-right: 7%;
+    }
+
+    .nav-link {
+        padding: 0 1%;
+    }
+
+    .primary-nav a:last-child {
+        order: -1;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 42px;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 18px 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-col.left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #cta-button {
+        width: 22%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 26px auto 0;
+    }
+
+    .hero-col.right {
+        display: none;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
