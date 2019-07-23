@@ -198,6 +198,40 @@ footer {
     main {
         width: 95%;
     }
+
+    .two-col-row article {
+        width: 49%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 0 0.5%;
+    }
+
+    #middle-image {
+        height: 157px;
+        margin-left: 0;
+        margin-right: 0;
+        background-position: center;
+        background-size: 760px 157px;
+    }
+
+    .three-col-row {
+        justify-content: space-between;
+        padding-left: 1.25%;
+        padding-right: 1.5%;
+        padding-top: 1px;
+    }
+
+    .three-col-row article {
+        width: 31.25%;
+    }
+
+    #contact {
+        padding-left: 1.25%;
+        padding-right: 1.5%;
+        padding-top: 3px;
+
+        line-height: 0.6;
+    }
 }
 
 @media screen and (max-width: 500px) {
