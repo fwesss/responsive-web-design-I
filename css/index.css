@@ -81,7 +81,7 @@ article p {
 }
 
 footer {
-    padding: 39px 0 114px;
+    padding: 39px 0 0;
 
     font-size: 1.072em;
     text-align: center;
@@ -235,5 +235,109 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .primary-nav {
+        flex-direction: column;
+        padding: 20px 0 0;
+    }
 
+    .primary-nav a:last-child {
+        padding-left: 0;
+    }
+
+    #logo {
+        padding-bottom: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        height: 61px;
+        padding-top: 20px;
+
+        font-size: 1.32em;
+        letter-spacing: -0.028px;
+        text-align: center;
+    }
+
+    .nav-link {
+        border-top: 1px solid #000000;
+    }
+
+    .nav-link:nth-of-type(1) {
+        margin-top: 20px;
+    }
+
+    .nav-link:nth-of-type(6) {
+        border-bottom: 1px solid #000000;
+    }
+
+    .hero {
+        padding: 0;
+        margin: 0;
+    }
+
+    #cta-button {
+        width: 37%;
+        margin-top: 24px;
+
+        font-size: 1.14em;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #content {
+        padding-bottom: 0;
+
+        border-top: 2px solid #333333;
+        border-bottom: 2px solid #333333;
+    }
+
+    .two-col-row, .three-col-row {
+        flex-direction: column;
+    }
+
+    .two-col-row article {
+        margin: 0 0 6px;
+    }
+
+    .two-col-row article, .three-col-row article {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .three-col-row {
+        padding: 0;
+    }
+
+    .three-col-row article {
+        margin-bottom: 22px;
+    }
+
+    #content article:last-of-type {
+        margin-bottom: 10px;
+        padding-bottom: 23px;
+    }
+
+    article p {
+        padding-right: 8%;
+
+        font-size: 1.1em;
+        letter-spacing: -0.218px;
+    }
+
+    #middle-image {
+        height: 95px;
+        margin: 20px 0 10px;
+
+        background-size: 460px 95px;
+    }
+
+    #contact {
+        padding: 8px 0;
+    }
+
+    footer {
+        padding: 30px 0 0;
+    }
 }
