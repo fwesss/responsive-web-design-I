@@ -20,6 +20,7 @@
 }
 
 main {
+    max-width: 880px;
     width: 88%;
     margin: 0 auto;
 }
@@ -150,11 +151,42 @@ footer {
 ********/
 
 @media screen and (max-width: 800px) {
+    .primary-nav {
+        justify-content: space-between;
+        padding-left: 2.8%;
+        padding-right: 7%;
+    }
+
+    #logo {
+        padding-left: 5%;
+    }
+
     #content-container {
         flex-direction: column;
     }
 
     .card {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .primary-nav {
+        flex-direction: column;
+        padding: 20px 0 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        height: 61px;
+        padding-top: 20px;
+
+        font-size: 1.32rem;
+        letter-spacing: -0.028px;
+        text-align: center;
+    }
+
+    #logo {
+        padding-left: 0;
     }
 }
