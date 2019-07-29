@@ -1,3 +1,315 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/**********
+* Layout *
+**********/
 
+.primary-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 30px 1% 0;
+    font-weight: bold;
+}
 
+.nav-link {
+    letter-spacing: 0.755px;
+    font-size: 0.964rem;
+}
+
+#logo {
+    padding-left: 14%;
+}
+
+/* Main Content */
+
+main {
+    margin: 0 auto;
+    width: 86%;
+}
+
+#content {
+    padding-top: 36px;
+    padding-bottom: 34px;
+
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+article h2 {
+    font-size: 1.06rem;
+    padding-bottom: 3px;
+}
+
+article p {
+    font-size: 1.1rem;
+    letter-spacing: -0.2px;
+    line-height: 1.091;
+}
+
+.two-col-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-col-row article {
+    width: 50%;
+}
+
+#middle-image {
+    height: 182px;
+    margin: 30px 0.2%;
+
+    background-image: url("../img/mid-page-accent.jpg");
+}
+
+.three-col-row {
+    display: flex;
+}
+
+.three-col-row article {
+    padding-right: 2.2%;
+}
+
+#contact {
+    margin-top: 34px;
+}
+
+#contact address {
+    font-size: 1.052rem;
+    line-height: 1.015;
+}
+
+footer {
+    padding: 39px 0 0;
+
+    font-size: 1.072rem;
+    text-align: center;
+}
+
+/**********
+* Modules *
+**********/
+
+/* Navbar Styling */
+
+.nav-link {
+    color: #B0B0B0;
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    padding: 68px 0 50px;
+    margin-bottom: 22px;
+
+    text-align: right;
+}
+
+.hero-col.left {
+    padding-top: 52px;
+    padding-left: 12%;
+    padding-bottom: 50px;
+    width: 50%;
+
+    text-align: center;
+    line-height: 0.98;
+}
+
+.hero-col.right {
+    width: 50%;
+
+    background-image: url("../img/header-img.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.tag-line {
+    font-family: 'Bangers', cursive;
+    font-size: 4.93rem;
+}
+
+#cta-button {
+    display: flex;
+    justify-content: center;
+    margin: 26px 83px 0;
+    padding: 7px 9%;
+
+    border: 1px solid #000000;
+
+    color: #000000;
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+
+/********
+* State *
+********/
+
+@media screen and (max-width: 800px) {
+    .primary-nav {
+        justify-content: space-between;
+        padding-left: 2.8%;
+        padding-right: 7%;
+    }
+
+    #logo {
+        padding-left: 5%;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 18px 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-col.left {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    #cta-button {
+        width: 22%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 26px auto 0;
+    }
+
+    .hero-col.right {
+        display: none;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .two-col-row article {
+        width: 49%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin: 0 0.5%;
+    }
+
+    #middle-image {
+        height: 157px;
+        margin-left: 0;
+        margin-right: 0;
+        background-position: center;
+        background-size: 760px 157px;
+    }
+
+    .three-col-row {
+        justify-content: space-between;
+        padding-left: 1.25%;
+        padding-right: 1.5%;
+        padding-top: 1px;
+    }
+
+    .three-col-row article {
+        width: 31.25%;
+    }
+
+    #contact {
+        padding-left: 1.25%;
+        padding-right: 1.5%;
+        padding-top: 3px;
+
+        line-height: 0.6;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .primary-nav {
+        flex-direction: column;
+        padding: 20px 0 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        height: 61px;
+        padding-top: 20px;
+
+        font-size: 1.32rem;
+        letter-spacing: -0.028px;
+        text-align: center;
+    }
+
+    #logo {
+        padding-left: 0;
+    }
+
+    .hero {
+        padding: 0;
+        margin: 0;
+    }
+
+    #cta-button {
+        width: 37%;
+        margin-top: 24px;
+
+        font-size: 1.14rem;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    #content {
+        padding-bottom: 0;
+
+        border-top: 2px solid #333333;
+        border-bottom: 2px solid #333333;
+    }
+
+    .two-col-row, .three-col-row {
+        flex-direction: column;
+    }
+
+    .two-col-row article {
+        margin: 0 0 6px;
+    }
+
+    .two-col-row article, .three-col-row article {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .three-col-row {
+        padding: 0;
+    }
+
+    .three-col-row article {
+        margin-bottom: 22px;
+    }
+
+    #content article:last-of-type {
+        margin-bottom: 10px;
+        padding-bottom: 23px;
+    }
+
+    article p {
+        padding-right: 8%;
+
+        font-size: 1.1rem;
+        letter-spacing: -0.218px;
+    }
+
+    #middle-image {
+        height: 95px;
+        margin: 20px 0 10px;
+
+        background-size: 460px 95px;
+    }
+
+    #contact {
+        padding: 8px 0;
+    }
+
+    footer {
+        padding: 30px 0 0;
+    }
+}
